@@ -1,23 +1,27 @@
 import React from "react";
-import './App.css';
+/*import './App.css';*/
+
+import Header from './components/Header/Header';
+import Footer from './components/Footer/Footer';
+
 import Home from './pages/Home';
 import About from './pages/About';
-import { BrowserRouter, Routes, Route } from "react-router-dom"
-import Error from './_utils/Error';
+import NoPage from './pages/NoPage';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 
 function App() {
   return (
         <div className="App">
           <BrowserRouter>
+          <Header />
             <Routes>
-            <Route index element={<Home/>}/>;
+              <Route index element={<Home/>}/>;
               <Route path="/home" element={<Home/>}/>;
               <Route path="/about" element={<About/>}/>;
-
-              <Route path="*" element={<Error/>}/>;
-
+              <Route path="*" element={<NoPage />}/>;
             </Routes>
+            <Footer />
           </BrowserRouter>
         </div>
   );

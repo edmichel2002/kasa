@@ -1,0 +1,32 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: 40px;
+    color: var(--main);
+}
+
+.Kasa{
+    width: 210px;
+}
+
+header ul {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    gap: 55px;
+    font-size: 24px;
+}
+
+ul a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+ul a.active {
+    border-bottom: 2px solid var(--main);
+    
+}
+
+
