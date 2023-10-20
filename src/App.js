@@ -4,7 +4,7 @@ import React from "react";
 import Header from './components/Header/Header';
 import Footer from './components/Footer/Footer';
 
-import Banner from './components/Banner/Banner';
+// import Banner from './components/Banner/Banner';
 /*import Card from './components/Card/Card';*/
 /*import Main from  './components/Main/Main';*/
 /*import Slideshow './components/Slideshow/Slideshow';*/
@@ -21,7 +21,6 @@ function App() {
         <div className="App">
           <BrowserRouter>
           <Header />
-          <Banner />
             <Routes>
               <Route index element={<Home/>}/>;
               <Route path="/home" element={<Home/>}/>;
