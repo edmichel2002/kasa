@@ -1,17 +1,17 @@
 import React from 'react';
-import './Banner.css'; 
-import HomeImage from '../Assets/images/HomeImage.png';
+/*import HomeImage from '../../Assets/images/BannerHome.png';*/
 
-const Banner = ({ text }) => {
+const Banner = props => {
+    console.log(props)
+    let img = props.img;
     return (
-        <div className='Banner'>
-            <img src={HomeImage} alt="Home" className='Banner-image'/> 
-            <p>{text}</p>
-            <div className='Banner-show'></div> 
+        <div className='banner'>
+            <img src= {img} alt='Banner'/>
+            <h1>chez vous, partout et ailleurs"</h1>
+            
         </div>
     );
 };
 
 export default Banner;
-
 
