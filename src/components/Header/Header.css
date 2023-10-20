@@ -19,12 +19,12 @@ header ul {
     font-size: 24px;
 }
 
-ul a {
+header ul a {
     text-decoration: none;
     font-weight: 500;
 }
 
-ul a.active {
+header ul a .active {
     border-bottom: 2px solid var(--main);
     
 }
