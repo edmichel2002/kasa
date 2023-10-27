@@ -1,11 +1,11 @@
-.mainhome {
+.Main {
     width: 90%;
     margin: 0 auto;
     color: var(--main);
     margin-top: 60px;
 }
 
-.Background_2 {
+.Background {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -14,7 +14,7 @@
     padding-top: 20px;
 }
 
-.Background_2 img {
+.Background img {
     height: 225px;
     width: 100%;
     object-fit: cover;

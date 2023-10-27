@@ -1,4 +1,4 @@
-.mainhome {
+.mainAbout {
     width: 90%;
     margin: 0 auto;
     color: var(--main);
@@ -29,3 +29,4 @@ h1 {
     font-weight: normal;
     margin: auto 0;
 }
+

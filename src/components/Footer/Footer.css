@@ -17,3 +17,23 @@ footer h5 {
     font-family: Montserrat;
     font-size: 24px;
 }
+
+
+
+
+
+/* *****************************************  Mode tablette  ***************************************** */
+
+@media screen and (max-width: 992px) {
+
+}
+
+
+/* *****************************************  Mode téléphone  ***************************************** */
+
+@media screen and (max-width: 768px) {
+
+    .footer {
+        margin-top: 40px;
+    }
+}
