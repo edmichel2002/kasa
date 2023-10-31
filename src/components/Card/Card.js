@@ -1,20 +1,13 @@
 import React from "react";
 import {Link } from "react-router-dom";
-import Accomodation from '../Accomodation.json';
 import '../../Style/MainHome.css';
 
 
-function Card() {
+function Card({cover, title, link}) {
     return (
-        <div className='locations'>
-            {Accomodation.map((detail) => {
-                return (
-                    <div className="locate" key={detail.id}>
-                        <Link to={`/fiche/${detail.id}`}><img src={detail.cover} alt={detail.title}/></Link> 
-                        <p>{detail.title}</p>
-                    </div>
-                )
-            })}
+        <div className="locate">
+            <Link to={`/accomodation/${link}`}><img src={cover} alt={title}/></Link> 
+            <p>{title}</p>
         </div>
     )
 }

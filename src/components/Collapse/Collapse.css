@@ -1,71 +1,66 @@
-.collapse {
-    display: flex;
-    justify-content: flex-end;
-}
-
-
-.aboutCollapse {
+.aboutCollapse{
+    font-size: 24px;
+    font-weight: 500;
     display: flex;
     flex-direction: column;
-    margin-top: 0;
-    padding-top: 50px;
     justify-content: space-between;
     align-items: center;
-   
-}
+    padding: 38px 10px 5px 15px;
+    border-radius: 5px;
+    position: relative;
+    z-index: 1;
+    cursor: pointer;
+    }
 
-.collapsible-content{
-    margin: -5px auto 0 auto;
-    border-radius: 0 0 5px 5px;
-    animation: loadContent 400ms both;
+.collapsible {
+    padding-bottom: 2.5vh;
+    width: 74%; 
+    }
     
-    
+.collapsible-header {
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 1rem;
+cursor: pointer;
+background-color: #FF6060;
+color: white;
+user-select: none;
+border-radius: 5px;
+height: 3px;
 }
-.collapsible-content.open{
+    
+.collapsible-content {
+    background-color: #F6F6F6;
+    margin: -5px auto 0 auto;
+    max-width: 1240px;
+    border-radius: 0 0 5px 5px;
+    animation: loadContent 600ms both;
+    }
+
+ .collapsible-content.open {
     padding: 35px 30px 15px 15px;
 }
 
-.accommodationCollapse{
+.accommodationCollapse {
     font-size: 18px;
     font-weight: 500;
     color: white;
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     border-radius: 10px;
     padding: 10px;
     position: relative;
     z-index: 1;
     cursor: pointer;
-}
-/*div{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--main);
-    border-radius: 10px;
-    height: 52px;
-    color: white;
-    position: absolute;
-    cursor: pointer;
-}*/
+    }
+.collapsible-content {
+    color:#FF6060;
+    background-color: #F6F6F6;
+    margin: -5px auto 0 auto;
+    border-radius: 0 0 5px 5px;
+    animation: loadContent 400ms both;
+    }
+.collapsible-content.open {
+    padding: 35px 30px 15px 15px;
+    }
 
-.content{
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    background-color: var(--main);
-    border-radius: 10px;
-    height: 52px;
-    color: white;
-    position: absolute;
-    cursor: pointer;
-}
-
-.collapse img{
-    transform: rotate(90deg);
-    padding-top: 40px;
-    height: 24px;
-}

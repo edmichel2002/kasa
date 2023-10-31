@@ -5,8 +5,8 @@ import '../../Style/NoPage.css';
 function NoPage() {
     return (
         <div className="NoPage">
-            <h1>404</h1>
-            <p>Oups! La page que vous demandez n'existe pas.</p>
+            <h1 className='code'>404</h1>
+            <p className='Error'>Oups! La page que vous demandez n'existe pas.</p>
             <div className='link'>
                 <Link to="/">
                     <p className="Accueil">Retourner sur la page d’accueil</p>

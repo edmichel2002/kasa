@@ -12,10 +12,10 @@ import '../Collapse/Collapse.css'
     }
 
     return (
-        <div>
+        <div className="collapsible">
             <div
                 onClick={handleToggleCollapse}
-                className={`collapse ${isOpen ? "open" : ""}`}>
+                className={`collapsible-header ${isOpen ? "open" : ""}`}>
                 <p>{title}</p>
                 <img src={isOpen ? arrow_down : arrow_up}
                     alt={isOpen ? "fermer" : "ouvrir"} />

@@ -11,10 +11,10 @@ function Header() {
             <img src={logo_header} className="Kasa" alt="logo de Kasa" />
             <nav>
                 <ul>
-                <Link to="/" ClassName="activeLink">
+                <Link to="/" className="activeLink">
                     <li>Accueil</li>
                 </Link>
-                <Link to="/about" ClassName="activeLink">
+                <Link to="/about" className="activeLink">
                     <li>A Propos</li>
                 </Link>
                 </ul>
