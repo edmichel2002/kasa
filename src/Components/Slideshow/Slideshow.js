@@ -3,14 +3,14 @@ import arrowLeft from "../../Assets/images/arrow_back_ios-24px 1.png";
 import arrowRight from "../../Assets/images/arrow_forward_ios-24px 1.png";
 
 
-function Slideshow({imagesList}) {
+function Slideshow({ imagesList }) {
     const [currentIndex, setCurrentIndex] = useState(0)
     const currentImage = imagesList[currentIndex]
 
     const slideLeft = () => {
         setCurrentIndex(currentIndex === 0 ? imagesList.length - 1 : currentIndex - 1)
     }
-    
+
     const slideRight = () => {
         setCurrentIndex(currentIndex === imagesList.length - 1 ? 0 : currentIndex + 1)
     }

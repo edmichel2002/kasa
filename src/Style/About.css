@@ -21,12 +21,3 @@
     border-radius: 25px;
     filter: brightness(70%);
 }
-
-h1 {
-    font-size: 48px;
-    color: white;
-    position: absolute;
-    font-weight: normal;
-    margin: auto 0;
-}
-

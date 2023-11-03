@@ -8,16 +8,16 @@ import '../../Style/MainHome.css'
 
 
 
-function Home(){
+function Home() {
     //console.log(LogementList)
     return (
         <section>
             <div className='Main'>
-                 <Banner image={HomeImage} alt ='BannerHome' h1="Chez vous, partout et ailleurs"/>
-                 <div className='locations'>
-                        {LogementList.map(logement => (
-                            <Card title={logement.title} cover={logement.cover} link={logement.identifiant} />
-                        ))}
+                <Banner image={HomeImage} alt='BannerHome' h1="Chez vous, partout et ailleurs" />
+                <div className='locations'>
+                    {LogementList.map(logement => (
+                        <Card key={logement.id} title={logement.title} cover={logement.cover} link={logement.id} />
+                    ))}
                 </div>
             </div>
         </section>

@@ -3,8 +3,8 @@ import { useParams, useNavigate } from "react-router-dom"
 import Slideshow from "../../Components/Slideshow/Slideshow";
 import Collapse from "../../Components/Collapse/Collapse";
 import data from "../../Data/Data.json";
-import starColor from "../../Assets/images/arrow_back_ios-24px 1.png"
-import starGrey from "../../Assets/images/arrow_forward_ios-24px 1.png"
+import starColor from "../../Assets/images/Vector-1.png"
+import starGrey from "../../Assets/images/Vector.png"
 import '../../Style/Accomodation.css';
 
 
@@ -16,26 +16,26 @@ export default function Accommodation() {
 
     useEffect(() => {
         if (!selectedItem) {
-            navigate("*")
+            navigate("/404")
         }
     }, [selectedItem, navigate])
 
     if (selectedItem) {
 
         const { pictures, title, location, host, tags, rating, description, equipments } = selectedItem
-        
+
         const ratingNumber = parseInt(rating)
         const stars = Array.from({ length: 5 }, (_, index) => (
             <img
-            key={index}
-            src={index < ratingNumber ? starColor : starGrey}
-            alt={index < ratingNumber ? "star" : "empty-star"} />
-            ))
-            
+                key={index}
+                src={index < ratingNumber ? starColor : starGrey}
+                alt={index < ratingNumber ? "star" : "empty-star"} />
+        ))
+
         return (
             <section className="accommodationContent">
                 <Slideshow imagesList={pictures} />
-                
+
                 <div className="titleLocationHostStars">
                     <div className="titleLocation">
                         <div>

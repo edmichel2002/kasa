@@ -22,18 +22,10 @@
     filter: brightness(70%);
 }
 
-h1 {
-    font-size: 48px;
-    color: white;
-    position: absolute;
-    font-weight: normal;
-    margin: auto 0;
-}
-
 .locations {
     display: grid;
     justify-content: space-around;
-	grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto auto;
     column-gap: 10px;
     background-color: var(--secondary);
     border-radius: 25px;
@@ -85,7 +77,7 @@ h1 {
         margin-top: 20px;
     }
 
-    .Background img{
+    .Background img {
         height: 160px;
     }
 
@@ -99,7 +91,7 @@ h1 {
         height: 225px;
     }
 
-    .locations{
+    .locations {
         grid-template-columns: auto auto;
     }
 }
@@ -120,7 +112,7 @@ h1 {
         align-items: flex-start;
     }
 
-    .Background img{
+    .Background img {
         height: 111px;
         border-radius: 10px;
     }
@@ -130,7 +122,7 @@ h1 {
         margin-bottom: 20px;
     }
 
-    .locations{
+    .locations {
         grid-template-columns: auto;
         background-color: transparent;
         border-radius: 0;
@@ -138,4 +130,3 @@ h1 {
         padding-bottom: 0;
     }
 }
-
