@@ -1,0 +1,47 @@
+.descriptionAccomodation{
+    margin-bottom: 0;
+    padding-top: 20px;
+    position: relative;
+}
+
+.AccomodationImage{
+    border-radius: 25px;
+    height: 415px;
+    object-fit: cover;
+    width: 100%;
+    cursor: pointer;
+}
+.Number{
+    position: relative;
+        display: flex;
+        justify-content: space-between;
+        top: -260px;
+        z-index: 1;
+        margin-left: 20px;
+        margin-right: 20px;
+}
+.Number p{
+    color: white;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -125px;
+}
+
+
+@media screen and (max-width: 800px){
+    .descriptionAccommodation{
+        height: 255px;
+    } 
+
+    .Number{
+        top: -140px;
+    }
+    .Number p{
+        bottom: -100px;
+    }
+    .AccomodationImage{
+        width: 24px;
+        height: 24px;
+    }
+}

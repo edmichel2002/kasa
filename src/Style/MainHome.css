@@ -33,6 +33,8 @@
     padding-top: 50px;
     padding-bottom: 50px;
     margin-top: 40px;
+    cursor: pointer;
+ 
 }
 
 .locate {
@@ -41,6 +43,7 @@
     margin-bottom: 50px;
     position: relative;
 }
+
 
 .locate a {
     display: flex;

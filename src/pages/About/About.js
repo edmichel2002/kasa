@@ -5,7 +5,7 @@ import aboutImage from "../../Assets/images/aboutImage.png"
 import '../../Style/About.css'
 
 
-function About() {
+export default function About() {
   
     return (
         <div>
@@ -33,4 +33,3 @@ function About() {
     )
 }
 
-export default About;

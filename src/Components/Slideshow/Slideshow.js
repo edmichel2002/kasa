@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import arrowLeft from "../../Assets/images/arrow_back_ios-24px 1.png";
 import arrowRight from "../../Assets/images/arrow_forward_ios-24px 1.png";
-
+import '../Slideshow/Slideshow.css'
 
 function Slideshow({ imagesList }) {
     const [currentIndex, setCurrentIndex] = useState(0)
@@ -19,16 +19,16 @@ function Slideshow({ imagesList }) {
         <div className="descriptionAccommodation">
             <img src={currentImage}
                 alt="Accomodation"
-                className="imageAccommodation" />
+                className="AccomodationImage" />
             {imagesList.length === 1 ? null : (
-                <div>
-                    <img onClick={() => slideLeft()}
+                <div className="Number">
+                    <img className ="Arrow-Left" onClick={() => slideLeft()}
                         src={arrowLeft}
                         alt="Backward" />
                     <p>
                         {currentIndex + 1}/{imagesList.length}
                     </p>
-                    <img onClick={() => slideRight()}
+                    <img className ="Arrow-Right" onClick={() => slideRight()}
                         src={arrowRight}
                         alt="Forward" />
                 </div>
