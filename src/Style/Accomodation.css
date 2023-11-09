@@ -16,8 +16,11 @@
     justify-content: space-between;
     padding-right: 20px;
     row-gap: 20px;
+    margin-left: 10px;
 }
 .titleLocation h1 {
+    width: 635px;
+    height: 50px;
     font-size: 36px;
     font-weight: 500;
 }
@@ -30,6 +33,7 @@
     list-style-type: none;
     display: flex;
     column-gap: 10px;
+ 
 }
 
 
@@ -42,6 +46,7 @@
     border-radius: 9px;
     line-height: 22px;
     padding: 0 15px;
+   
 }
 
 .hostStars {
@@ -70,12 +75,7 @@
 }
 
 
- 
-
- 
-
-
-@media screen and (max-width: 800px) {
+@media screen and (max-width: 992px) {
    
     .titleLocationHostStars {
         flex-direction: column;
@@ -93,6 +93,48 @@
         min-width: 0;
     }
         
+    .accommodationCollapse {
+        flex-direction: column;
+        row-gap: 19px;
+        margin-bottom: 27px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .accommodationContent {
+        width: 86%;
+        /*max-width: 1240px;*/
+        margin: 27px auto 0 auto;
+    }
+     .titleLocationHostStars {
+            flex-direction: column;
+            margin-bottom: 13px;
+    }
+    .titleLocation h1{
+        font-size: 18px;
+    }
+               
+    .titleLocation p {
+        font-size: 14px;
+    }
+    .titleLocation li {
+        font-size: 10px;
+        min-width: 84px;
+    }
+    .hostStars {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hostStars img {
+        width: 18px;
+         height: 18px;
+    }
+    .host {
+        font-size: 12px;
+         min-width: 0;
+    }
+
     .accommodationCollapse {
         flex-direction: column;
         row-gap: 19px;

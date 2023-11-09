@@ -22,10 +22,29 @@
     filter: brightness(70%);
 }
 
-h1 {
+.words {
     font-size: 48px;
     color: white;
     position: absolute;
     font-weight: normal;
     margin: auto 0;
 }
+
+/* *****************************************  Mode tablette  ***************************************** */
+
+@media screen and (max-width: 992px){
+  
+
+}
+
+/* *****************************************  Mode téléphone  ***************************************** */
+@media screen and (max-width: 768px){
+    .words {
+        font-size: 18px;
+        margin-left: 8px;
+        padding: 46px;
+    }
+}
+
+
+

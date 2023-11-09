@@ -1,8 +1,9 @@
 .descriptionAccomodation{
     margin-bottom: 0;
     padding-top: 20px;
-    position: relative;
+    height: 415px;
 }
+
 
 .AccomodationImage{
     border-radius: 25px;
@@ -29,19 +30,17 @@
 }
 
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 768px){
     .descriptionAccommodation{
         height: 255px;
     } 
 
     .Number{
-        top: -140px;
+        top: -260px;
     }
     .Number p{
         bottom: -100px;
     }
-    .AccomodationImage{
-        width: 24px;
-        height: 24px;
-    }
+    /*.AccomodationImage{
+    }*/
 }

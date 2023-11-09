@@ -75,6 +75,16 @@
         font-size: 45px;
         padding: 16px;
     }
+}
+
+/* *****************************************  Mode tablette  ***************************************** */
+
+@media screen and (max-width: 992px) {
+
+    h1 {
+        font-size: 45px;
+        padding: 16px;
+    }
 
     .mainhome {
         margin-top: 20px;
@@ -114,6 +124,9 @@
         margin: 0 auto;
         align-items: flex-start;
     }
+    /*.Background h1{
+        margin-left: 24%;
+    }*/
 
     .Background img {
         height: 111px;

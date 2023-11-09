@@ -33,6 +33,7 @@ export default function Accommodation() {
         ))
 
         return (
+           
             <section className="accommodationContent">
                 <Slideshow imagesList={pictures} />
 

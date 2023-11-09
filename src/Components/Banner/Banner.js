@@ -1,15 +1,11 @@
 import React from 'react';
-import '../Banner/Banner.css';
+import './Banner.css'; 
 
-const Banner = props => {
-
-    return (
-        <div className='Background'>
-            <img src={props.image} className={props.namealt} alt={props.namealt} />
-            {props.h1 && <h1>{props.h1}</h1>}
-            
-        </div>
-    );
-};
+const Banner = ({ image, namealt, h1 }) => (
+  <div className='Background'>
+    <img src={image} className={namealt} alt={namealt} />
+    {h1 && <h1 className='words'>{h1}</h1>}
+  </div>
+);
 
 export default Banner;
