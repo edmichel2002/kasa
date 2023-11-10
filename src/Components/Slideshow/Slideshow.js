@@ -22,7 +22,7 @@ function Slideshow({ imagesList }) {
 
   return (
     <div className="descriptionAccommodation">
-      <img src={currentImage} alt="Accommodation" className="AccommodationImage" />
+      <img src={currentImage} alt="Accommodation" className="Image" />
       {imagesList.length > 1 && (
         <div className="Number">
           <img className="Arrow-Left" onClick={() => slide("left")} src={arrowLeft} alt="Backward" />

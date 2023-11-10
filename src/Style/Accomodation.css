@@ -1,9 +1,11 @@
-.accommodationContent {
-    color: var(--main);
-    margin: 0 auto 80px;
+.containerAccomodation {
     width: 90%;
+    margin: 0 auto;
+    color: var(--main);    
+    margin-bottom: 80px;
     margin-top: 38px;
 }
+
  .titleLocationHostStars {
     display: flex;
     justify-content: space-between;
@@ -20,7 +22,7 @@
 }
 .titleLocation h1 {
     width: 635px;
-    height: 50px;
+    
     font-size: 36px;
     font-weight: 500;
 }
@@ -30,9 +32,15 @@
  }
 
  .titleLocation ul {
-    list-style-type: none;
     display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    list-style-type: none;
     column-gap: 10px;
+    color: white;
+    font-size: 14px;
+    font-weight: normal;
+    margin-left: -42px;
  
 }
 

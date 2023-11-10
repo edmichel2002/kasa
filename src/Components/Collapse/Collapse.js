@@ -1,32 +1,38 @@
 import React, { useState, useRef } from "react";
-import arrowUp from "../../Assets/images/arrow_up.png";
-import arrowDown from "../../Assets/images/arrow_down.png";
-import styles from "../Collapse/Collapse.css";
+import arrowUpImage from "../../Assets/images/arrow_up.png";
+import arrowDownImage from "../../Assets/images/arrow_down.png";
+import '../Collapse/Collapse.css';
 
 function Collapse({ title, content }) {
-  const [isOpen, setIsOpen] = useState(false);
-  const contentRef = useRef(null);
+    const [isOpen, setIsOpen] = useState(false);
+    const contentRef = useRef(null);
 
-  const handleToggleCollapse = () => {
-    setIsOpen(!isOpen);
-  };
+    const handleToggleCollapse = () => {
+        setIsOpen(!isOpen);
+    };
 
-  const headerClasses = `${styles.collapsibleHeader} ${isOpen ? styles.open : ""}`;
-  const contentClasses = `${styles.collapsibleContent} ${isOpen ? styles.open : ""}`;
-
-  return (
-    <div className={styles.collapsible}>
-      <div onClick={handleToggleCollapse} className={headerClasses}>
-        <p>{title}</p>
-        <img src={isOpen ? arrowDown : arrowUp} alt={isOpen ? "fermer" : "ouvrir"} />
-      </div>
-      {isOpen && (
-        <div ref={contentRef} className={contentClasses}>
-          <ul>{content}</ul>
+    return (
+        <div className={`collapsible ${isOpen ? "open" : ""}`}>
+            <div
+                onClick={handleToggleCollapse}
+                className="collapsible-header"
+            >
+                <p>{title}</p>
+                <img
+                    src={isOpen ? arrowDownImage : arrowUpImage}
+                    alt={isOpen ? "fermer" : "ouvrir"}
+                />
+            </div>
+            {isOpen && (
+                <div
+                    ref={contentRef}
+                    className="collapsible-content"
+                >
+                    <ul>{content}</ul>
+                </div>
+            )}
         </div>
-      )}
-    </div>
-  );
+    );
 }
 
 export default Collapse;
