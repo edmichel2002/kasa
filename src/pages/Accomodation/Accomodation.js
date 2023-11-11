@@ -60,7 +60,7 @@ export default function Accommodation() {
                         <p>{host.name}</p>
                         <img src={host.picture} alt={host.name} />
                     </div>
-                    <div>{stars}</div>
+                    <div className="stars">{stars}</div>
                 </div>
             </div>
             <div className="accommodationCollapse">

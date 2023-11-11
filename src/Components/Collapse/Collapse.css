@@ -28,6 +28,7 @@
     user-select: none;
     border-radius: 10px;
     height: 30px;
+    margin-left: -14px;
 }
 
 .collapsible-content {
@@ -45,7 +46,6 @@
     font-size: 18px;
     font-weight: 500;
     color: white;
-    align-items: center;
     border-radius: 10px;
     padding: 10px;
     position: relative;

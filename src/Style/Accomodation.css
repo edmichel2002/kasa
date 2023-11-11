@@ -6,23 +6,26 @@
     margin-top: 38px;
 }
 
+.collapsible-content ul {
+    margin: 0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
  .titleLocationHostStars {
     display: flex;
     justify-content: space-between;
     color: var(--main);
     margin-bottom: 24px;
 }
- .titleLocation {
+.titleLocation {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding-right: 20px;
     row-gap: 20px;
-    margin-left: 10px;
 }
 .titleLocation h1 {
-    width: 635px;
-    
     font-size: 36px;
     font-weight: 500;
 }
@@ -53,14 +56,14 @@
     font-size: 14px;
     border-radius: 9px;
     line-height: 22px;
-    padding: 0 15px;
-   
+    padding: 3px 15px;
 }
 
 .hostStars {
     display: flex;
     flex-direction: column;
     row-gap: 20px;
+    margin-top: 25px;
 }
  .host {
     display: flex;
@@ -76,24 +79,22 @@
     border-radius: 50%;
 }
  
- .accommodationCollapse {
+.stars{
+    display: flex;
+    justify-content: space-around;
+}
+.accommodationCollapse {
     display: flex;
     column-gap: 76px;
     margin-bottom: 50px;
+    align-items: flex-start;
 }
-
 
 @media screen and (max-width: 992px) {
    
     .titleLocationHostStars {
         flex-direction: column;
         margin-bottom: 13px;
-    }
-       
-    .hostStars {
-        flex-direction: row-reverse;
-        justify-content: space-between;
-        align-items: center;
     }
         
      .host {
@@ -110,16 +111,21 @@
 
 @media screen and (max-width: 768px) {
     .accommodationContent {
-        width: 86%;
-        /*max-width: 1240px;*/
+        width: 100%;
         margin: 27px auto 0 auto;
     }
+
      .titleLocationHostStars {
-            flex-direction: column;
-            margin-bottom: 13px;
+        flex-direction: column;
+        margin-top: 70px;
     }
     .titleLocation h1{
         font-size: 18px;
+        padding-left: 0;
+    }
+
+    .titleLocation ul{
+        margin-left: -40px;
     }
                
     .titleLocation p {
@@ -136,16 +142,20 @@
     }
     .hostStars img {
         width: 18px;
-         height: 18px;
+        height: 18px;
     }
     .host {
         font-size: 12px;
          min-width: 0;
     }
-
-    .accommodationCollapse {
-        flex-direction: column;
-        row-gap: 19px;
-        margin-bottom: 27px;
+    .collapsible-header{
+        margin-right: -9px;
     }
+    
+    .accommodationCollapse {
+    margin-bottom: 0;
+    margin-left: 0;
+    }
+
+    
 }

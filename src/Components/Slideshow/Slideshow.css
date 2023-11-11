@@ -10,14 +10,13 @@
     object-fit: cover;
 }
 
-.Number{
-    position: relative;
+.Number {
+    position: absolute;
     display: flex;
     justify-content: space-between;
-    top: -260px;
+    top: 300px;
     z-index: 1;
-    /*margin-left: 20px;
-    margin-right: 20px;*/
+    width: 90%;
 }
 .Number p{
     color: white;
@@ -32,13 +31,26 @@
     .descriptionAccommodation{
         height: 255px;
     } 
-
+    
+    .Image{
+    height: 335px;
+    }
     .Number{
-        top: -260px;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    top: 240px;
+    z-index: 1;
+    width: 90%;
     }
-    .Number p{
-        bottom: -100px;
+    .Arrow-Left{
+        margin-left: -15px;
     }
-    /*.AccomodationImage{
-    }*/
+
+    .Arrow-Right{
+        margin-right: -15px;
+    }
+    .Number{
+        top: 250px;
+    }
 }
