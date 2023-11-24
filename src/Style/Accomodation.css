@@ -8,8 +8,7 @@
 
 .collapsible-content ul {
     margin: 0;
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding: 20px;
 }
 
  .titleLocationHostStars {
@@ -83,6 +82,9 @@
     display: flex;
     justify-content: space-around;
 }
+.stars img{
+    height: 20px;
+}
 .accommodationCollapse {
     display: flex;
     column-gap: 76px;
@@ -125,6 +127,8 @@
     }
 
     .titleLocation ul{
+        flex-wrap: wrap;
+        gap: 10px;
         margin-left: -40px;
     }
                
@@ -140,7 +144,7 @@
         justify-content: space-between;
         align-items: center;
     }
-    .hostStars img {
+    .stars img{
         width: 18px;
         height: 18px;
     }
@@ -149,13 +153,15 @@
          min-width: 0;
     }
     .collapsible-header{
-        margin-right: -9px;
+       margin: 0;
     }
     
     .accommodationCollapse {
     margin-bottom: 0;
     margin-left: 0;
+    align-items: center;
     }
+    
 
     
 }
