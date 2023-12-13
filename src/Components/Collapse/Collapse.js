@@ -1,11 +1,11 @@
-import React, { useState, useRef } from "react";
+import React, { useState } from "react";
 import arrowUpImage from "../../Assets/images/arrow_up.png";
 import arrowDownImage from "../../Assets/images/arrow_down.png";
 import '../Collapse/Collapse.css';
 
 function Collapse({ title, content }) {
     const [isOpen, setIsOpen] = useState(false);
-    const contentRef = useRef(null);
+   
 
     const handleToggleCollapse = () => {
         setIsOpen(!isOpen);
@@ -25,7 +25,7 @@ function Collapse({ title, content }) {
             </div>
             {isOpen && (
                 <div
-                    ref={contentRef}
+                    
                     className="collapsible-content"
                 >
                     <ul>{content}</ul>

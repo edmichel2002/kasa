@@ -11,6 +11,10 @@
     padding: 20px;
 }
 
+.collapsible-content li{
+    list-style: none;
+}
+
  .titleLocationHostStars {
     display: flex;
     justify-content: space-between;
